@@ -1,0 +1,17 @@
+/Users/emreer/Desktop/CarRenting/DataAccess/bin/Debug/net9.0/DataAccess.deps.json
+/Users/emreer/Desktop/CarRenting/DataAccess/bin/Debug/net9.0/DataAccess.dll
+/Users/emreer/Desktop/CarRenting/DataAccess/bin/Debug/net9.0/DataAccess.pdb
+/Users/emreer/Desktop/CarRenting/DataAccess/bin/Debug/net9.0/Core.dll
+/Users/emreer/Desktop/CarRenting/DataAccess/bin/Debug/net9.0/Entities.dll
+/Users/emreer/Desktop/CarRenting/DataAccess/bin/Debug/net9.0/Entities.pdb
+/Users/emreer/Desktop/CarRenting/DataAccess/bin/Debug/net9.0/Core.pdb
+/Users/emreer/Desktop/CarRenting/DataAccess/obj/Debug/net9.0/DataAccess.csproj.AssemblyReference.cache
+/Users/emreer/Desktop/CarRenting/DataAccess/obj/Debug/net9.0/DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+/Users/emreer/Desktop/CarRenting/DataAccess/obj/Debug/net9.0/DataAccess.AssemblyInfoInputs.cache
+/Users/emreer/Desktop/CarRenting/DataAccess/obj/Debug/net9.0/DataAccess.AssemblyInfo.cs
+/Users/emreer/Desktop/CarRenting/DataAccess/obj/Debug/net9.0/DataAccess.csproj.CoreCompileInputs.cache
+/Users/emreer/Desktop/CarRenting/DataAccess/obj/Debug/net9.0/DataAccess.csproj.Up2Date
+/Users/emreer/Desktop/CarRenting/DataAccess/obj/Debug/net9.0/DataAccess.dll
+/Users/emreer/Desktop/CarRenting/DataAccess/obj/Debug/net9.0/refint/DataAccess.dll
+/Users/emreer/Desktop/CarRenting/DataAccess/obj/Debug/net9.0/DataAccess.pdb
+/Users/emreer/Desktop/CarRenting/DataAccess/obj/Debug/net9.0/ref/DataAccess.dll
