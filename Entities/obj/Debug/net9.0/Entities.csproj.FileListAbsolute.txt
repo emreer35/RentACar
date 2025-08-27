@@ -13,3 +13,4 @@
 /Users/emreer/Desktop/CarRenting/Entities/obj/Debug/net9.0/refint/Entities.dll
 /Users/emreer/Desktop/CarRenting/Entities/obj/Debug/net9.0/Entities.pdb
 /Users/emreer/Desktop/CarRenting/Entities/obj/Debug/net9.0/ref/Entities.dll
+/Users/emreer/Desktop/CarRenting/Entities/obj/Debug/net9.0/Entities.sourcelink.json

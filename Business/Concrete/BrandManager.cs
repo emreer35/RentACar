@@ -1,8 +1,8 @@
 using System;
 using Business.Abstract;
 using Business.Constans;
-using Core.Utilities.Abstract;
-using Core.Utilities.Concrete;
+using Core.Utilities.Results.Abstract;
+using Core.Utilities.Results.Concrete;
 using DataAccess.Abstract;
 using Entities.Concrete;
 
@@ -20,13 +20,13 @@ public class BrandManager : IBrandService
     public IResult Add(Brand brand)
     {
         _brandDal.Add(brand);
-        return new SuccessResult(Messages.BrandAdded);
+        return new SuccessResult(Messages.SuccessAdded);
     }
 
     public IResult Delete(Brand brand)
     {
         _brandDal.Delete(brand);
-        return new SuccessResult(Messages.BrandDeleted);
+        return new SuccessResult(Messages.SuccessDeleted);
     }
 
     public IDataResult<Brand> Get(int id)
@@ -42,6 +42,6 @@ public class BrandManager : IBrandService
     public IResult Update(Brand brand)
     {
         _brandDal.Update(brand);
-        return new SuccessResult(Messages.BrandUpdated);
+        return new SuccessResult(Messages.SuccessUpdated);
     }
 }

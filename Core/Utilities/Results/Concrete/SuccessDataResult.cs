@@ -1,7 +1,7 @@
 using System;
-using Core.Utilities.Abstract;
 
-namespace Core.Utilities.Concrete;
+
+namespace Core.Utilities.Results.Concrete;
 
 public class SuccessDataResult<T> : DataResult<T>
 {

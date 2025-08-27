@@ -1,8 +1,8 @@
 using System;
 using Business.Abstract;
 using Business.Constans;
-using Core.Utilities.Abstract;
-using Core.Utilities.Concrete;
+using Core.Utilities.Results.Abstract;
+using Core.Utilities.Results.Concrete;
 using DataAccess.Abstract;
 using Entities.Concrete;
 using Entities.DTOs;
@@ -30,7 +30,7 @@ public class CarManager : ICarService
             return new ErrorResult(Messages.PriceNotUnderZero);
         }
         _carDal.Add(car);
-        return new SuccessResult(Messages.CarAdded);
+        return new SuccessResult(Messages.SuccessAdded);
     }
 
     public IDataResult<Car> Get(int id)
@@ -55,12 +55,12 @@ public class CarManager : ICarService
     public IResult Update(Car car)
     {
         _carDal.Update(car);
-        return new SuccessResult(Messages.CarUpdated);
+        return new SuccessResult(Messages.SuccessUpdated);
     }
     public IResult Delete(Car car)
     {
         _carDal.Delete(car);
-        return new SuccessResult(Messages.CarDeleted);
+        return new SuccessResult(Messages.SuccessDeleted);
     }
 
     public IDataResult<List<CarDetailDto>> GetCarDetails()

@@ -1,8 +1,8 @@
 using System;
 using Business.Abstract;
 using Business.Constans;
-using Core.Utilities.Abstract;
-using Core.Utilities.Concrete;
+using Core.Utilities.Results.Abstract;
+using Core.Utilities.Results.Concrete;
 using DataAccess.Abstract;
 using Entities.Concrete;
 
@@ -20,13 +20,13 @@ public class ColorManager : IColorService
     public IResult Add(Color color)
     {
         _colorDal.Add(color);
-        return new SuccessResult(Messages.ColorAdded);
+        return new SuccessResult(Messages.SuccessAdded);
     }
 
     public IResult Delete(Color color)
     {
         _colorDal.Delete(color);
-        return new SuccessResult(Messages.ColorDeleted);
+        return new SuccessResult(Messages.SuccessDeleted);
     }
 
     public IDataResult<Color> Get(int id)
@@ -42,6 +42,6 @@ public class ColorManager : IColorService
     public IResult Update(Color color)
     {
         _colorDal.Update(color);
-        return new SuccessResult(Messages.ColorUpdated);
+        return new SuccessResult(Messages.SuccessUpdated);
     }
 }

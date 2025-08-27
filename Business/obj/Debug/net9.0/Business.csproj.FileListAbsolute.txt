@@ -17,3 +17,4 @@
 /Users/emreer/Desktop/CarRenting/Business/obj/Debug/net9.0/refint/Business.dll
 /Users/emreer/Desktop/CarRenting/Business/obj/Debug/net9.0/Business.pdb
 /Users/emreer/Desktop/CarRenting/Business/obj/Debug/net9.0/ref/Business.dll
+/Users/emreer/Desktop/CarRenting/Business/obj/Debug/net9.0/Business.sourcelink.json

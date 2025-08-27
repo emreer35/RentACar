@@ -1,6 +1,6 @@
 using System;
 
-namespace Core.Utilities.Abstract;
+namespace Core.Utilities.Results.Abstract;
 
 public interface IResult
 {

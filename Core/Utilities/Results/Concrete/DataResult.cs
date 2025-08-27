@@ -1,7 +1,8 @@
 using System;
-using Core.Utilities.Abstract;
+using Core.Utilities.Results.Abstract;
 
-namespace Core.Utilities.Concrete;
+
+namespace Core.Utilities.Results.Concrete;
 
 public class DataResult<T> : Result, IDataResult<T>
 {

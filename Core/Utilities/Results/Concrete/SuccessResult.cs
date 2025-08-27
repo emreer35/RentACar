@@ -1,6 +1,6 @@
 using System;
 
-namespace Core.Utilities.Concrete;
+namespace Core.Utilities.Results.Concrete;
 
 public class SuccessResult : Result
 {
