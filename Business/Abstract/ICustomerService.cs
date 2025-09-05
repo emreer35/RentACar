@@ -14,4 +14,5 @@ public interface ICustomerService
     IDataResult<Customer> Get(int customerId);
     IDataResult<Customer> GetByUserId(int userId);
     IDataResult<List<CustomerDetailDto>> GetCustomerDetails();
+    IDataResult<CustomerDetailDto> GetCustomerDetailById(int id);
 }

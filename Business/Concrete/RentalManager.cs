@@ -34,15 +34,22 @@ public class RentalManager : IRentalService
         return new SuccessResult(Messages.RentCar);
     }
 
+    public IDataResult<List<Rental>> GetAll()
+    {
+        return new SuccessDataResult<List<Rental>>(_rentalDal.GetAll());
+    }
+
     public IResult Update(Rental rental)
     {
-        var activeCar = _rentalDal.GetAll(r => r.CarId == rental.CarId && r.ReturnDate == null).Any();
-        if (activeCar)
+        var activeRental = _rentalDal.GetAll(r => r.CarId == rental.CarId && r.ReturnDate == null)
+                                  .FirstOrDefault();
+        if (activeRental == null)
         {
-            rental.ReturnDate = DateTime.Now;
-            _rentalDal.Update(rental);
-            return new SuccessResult(Messages.OffCar);
+            return new ErrorResult(Messages.HasNotActiveCar);
+
         }
-        return new ErrorResult(Messages.HasNotActiveCar);
+        activeRental.ReturnDate = DateTime.Now;
+        _rentalDal.Update(activeRental);
+        return new SuccessResult(Messages.OffCar);
     }
 }

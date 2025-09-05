@@ -53,6 +53,17 @@ public class CustomerManager : ICustomerService
         return new SuccessDataResult<Customer>(result, Messages.SuccessListed);
     }
 
+    public IDataResult<CustomerDetailDto> GetCustomerDetailById(int id)
+    {
+        var result = _customerDal.GetCustomerDetailById(c => c.UserId == id);
+        if (result == null)
+        {
+            return new ErrorDataResult<CustomerDetailDto>(Messages.UserNotFound);
+        }
+        return new SuccessDataResult<CustomerDetailDto>(result, Messages.SuccessListed);
+
+    }
+
     public IDataResult<List<CustomerDetailDto>> GetCustomerDetails()
     {
         return new SuccessDataResult<List<CustomerDetailDto>>(_customerDal.GetCustomerDetails());
